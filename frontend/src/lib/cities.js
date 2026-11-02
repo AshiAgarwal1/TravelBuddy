@@ -1,0 +1,23 @@
+// Real cities with real coordinates, used as clickable atlas markers. Places shown for them always come from the live places API.
+export const ATLAS_CITIES = [
+  { name: 'Lisbon', country: 'Portugal', country_code: 'pt', lat: 38.7223, lon: -9.1393, region: 'Europe' },
+  { name: 'Paris', country: 'France', country_code: 'fr', lat: 48.8566, lon: 2.3522, region: 'Europe' },
+  { name: 'Rome', country: 'Italy', country_code: 'it', lat: 41.9028, lon: 12.4964, region: 'Europe' },
+  { name: 'Istanbul', country: 'Türkiye', country_code: 'tr', lat: 41.0082, lon: 28.9784, region: 'Europe' },
+  { name: 'Marrakesh', country: 'Morocco', country_code: 'ma', lat: 31.6295, lon: -7.9811, region: 'Africa' },
+  { name: 'Cape Town', country: 'South Africa', country_code: 'za', lat: -33.9249, lon: 18.4241, region: 'Africa' },
+  { name: 'Nairobi', country: 'Kenya', country_code: 'ke', lat: -1.2921, lon: 36.8219, region: 'Africa' },
+  { name: 'Dubai', country: 'United Arab Emirates', country_code: 'ae', lat: 25.2048, lon: 55.2708, region: 'Asia' },
+  { name: 'Agra', country: 'India', country_code: 'in', lat: 27.1767, lon: 78.0081, region: 'Asia' },
+  { name: 'Bangkok', country: 'Thailand', country_code: 'th', lat: 13.7563, lon: 100.5018, region: 'Asia' },
+  { name: 'Hanoi', country: 'Vietnam', country_code: 'vn', lat: 21.0285, lon: 105.8542, region: 'Asia' },
+  { name: 'Singapore', country: 'Singapore', country_code: 'sg', lat: 1.3521, lon: 103.8198, region: 'Asia' },
+  { name: 'Kyoto', country: 'Japan', country_code: 'jp', lat: 35.0116, lon: 135.7681, region: 'Asia' },
+  { name: 'Seoul', country: 'South Korea', country_code: 'kr', lat: 37.5665, lon: 126.978, region: 'Asia' },
+  { name: 'Sydney', country: 'Australia', country_code: 'au', lat: -33.8688, lon: 151.2093, region: 'Oceania' },
+  { name: 'New York', country: 'United States', country_code: 'us', lat: 40.7128, lon: -74.006, region: 'Americas' },
+  { name: 'Mexico City', country: 'Mexico', country_code: 'mx', lat: 19.4326, lon: -99.1332, region: 'Americas' },
+  { name: 'Cusco', country: 'Peru', country_code: 'pe', lat: -13.5319, lon: -71.9675, region: 'Americas' },
+  { name: 'Buenos Aires', country: 'Argentina', country_code: 'ar', lat: -34.6037, lon: -58.3816, region: 'Americas' },
+  { name: 'Rio de Janeiro', country: 'Brazil', country_code: 'br', lat: -22.9068, lon: -43.1729, region: 'Americas' },
+].map((c) => ({ ...c, display_name: `${c.name}, ${c.country}` }))
